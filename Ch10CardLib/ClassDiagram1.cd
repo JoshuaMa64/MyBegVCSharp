@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ch10CardLib.Card">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <AssociationLine Name="suit" Type="Ch10CardLib.Suit">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.133" Y="0.183" Height="0.181" Width="0.524" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="rank" Type="Ch10CardLib.Rank">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.133" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="suit" />
+      <Field Name="rank" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ch10CardLib.Deck">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <AssociationLine Name="cards" Type="Ch10CardLib.Card">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.133" Y="0.141" Height="0.181" Width="0.732" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Deck.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="cards" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Ch10CardLib.Suit">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAACA=</HashCode>
+      <FileName>Suit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Ch10CardLib.Rank">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAggAAAEAAECIAAAAAFBAAAAAAAAAgAAEE=</HashCode>
+      <FileName>Rank.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

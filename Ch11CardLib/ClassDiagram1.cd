@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ch11CardLib.Card">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <AssociationLine Name="suit" Type="Ch11CardLib.Suit">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.039" Y="0.137" Height="0.181" Width="0.591" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAEgACAAgAAAAAAAIgAAAAAAAIEBzA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rank" />
+      <Field Name="suit" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.177" />
+  </Class>
+  <Class Name="Ch11CardLib.Cards">
+    <Position X="3.5" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="System.Collections.CollectionBase" FixedToPoint="true">
+      <Path>
+        <Point X="2.75" Y="6" />
+        <Point X="3.5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="this[System.Int32]" Type="Ch11CardLib.Card">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.147" Y="0.102" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAQIBA=</HashCode>
+      <FileName>Cards.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.Int32]" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Left" Position="1.103" />
+  </Class>
+  <Class Name="Ch11CardLib.Deck">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <AssociationLine Name="cards" Type="Ch11CardLib.Cards">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.205" Y="0.186" Height="0.181" Width="0.712" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAEBA=</HashCode>
+      <FileName>Deck.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="cards" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Left" Position="0.348" />
+  </Class>
+  <Class Name="System.Collections.CollectionBase" Collapsed="true">
+    <Position X="1.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="Ch11CardLib.Rank">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAggAAAEAAECIAAAAAFBAAAAAAAAAgAAEE=</HashCode>
+      <FileName>Rank.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Ch11CardLib.Suit">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAACA=</HashCode>
+      <FileName>Suit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
