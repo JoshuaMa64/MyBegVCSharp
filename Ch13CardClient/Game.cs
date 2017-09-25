@@ -169,7 +169,7 @@ namespace Ch13CardClient
                     WriteLine();
                     // Check to see if player has won the game, and exit the player loop if so.
                     GameWon = players[currentPlayer].HasWon();
-                    if (!GameWon)
+                    if (GameWon)
                     {
                         break;
                     }
